@@ -1,0 +1,434 @@
+{
+    "Paracetamol": {
+        "name": "Paracetamol",
+        "uses": "Relieves mild to moderate pain (such as headaches, muscle aches, and toothaches) and reduces fever",
+        "usage": "Typically taken orally in tablet, capsule, or liquid form. It can be taken with or without food.",
+        "dosage": "For adults, the standard dose is 500 mg to 1000 mg every 4 to 6 hours as needed. The maximum daily limit is strictly 4000 mg to prevent liver damage.",
+        "ingredients": "Active: Paracetamol (also known as Acetaminophen). Inactive (common excipients vary by brand): Maize starch, povidone, magnesium stearate, and purified water",
+        "side_effects": "Generally well-tolerated at recommended doses. Potential side effects include mild skin rashes, allergic reactions, and severe liver damage if taken in excess"
+    },
+    "Ibuprofen": {
+        "name": "Ibuprofen",
+        "uses": "Reduce fever inflammation caused by conditions such as headache, toothache, back pain, arthritis, menstrual cramps, or minor injury.",
+        "usage": "Typically taken orally in tablet, chewable, capsule, or liquid form. It is highly recommended to take it with food or milk to prevent stomach upset.",
+        "dosage": "or adults, over-the-counter dosage is usually 200 mg to 400 mg every 4 to 6 hours as needed. The maximum daily over-the-counter limit is generally 1200 mg.",
+        "ingredients": "Active: Ibuprofen Inactive(varies by brand): : Carnauba wax, colloidal silicon dioxide, croscarmellose sodium etc.",
+        "side_effects": "Common side effects include upset stomach, mild heartburn, nausea, vomiting, bloating, gas, diarrhea, constipation, dizziness, and headache"
+    },
+    "Aspirin": {
+        "name": "Aspirin",
+        "uses": "Used to relieve mild to moderate pain, reduce fever, and helps prevent heart attacks and strokes.",
+        "usage": "Typically taken orally as a regular or chewable tablet with a full glass of water",
+        "dosage": "For pain and fever, adults usually take 325 mg to 650 mg every 4 hours, not exceeding 4000 mg in 24 hours. For cardiovascular prevention, a daily low dose of 81 mg is commonly directed by a doctor.",
+        "ingredients": "Active: Aspirin (acetylsalicylic acid). Inactive (common excipients vary by brand): Carnauba wax, corn starch, hypromellose, powdered cellulose, and triacetin.",
+        "side_effects": "Common side effects include upset stomach, heartburn, and easy bruising or bleeding"
+    },
+    "Cetirizine": {
+        "name": "Cetirizine",
+        "uses": "Used to relieve allergy symptoms such as watery eyes, runny nose, itching, sneezing, and hives.",
+        "usage": "Typically taken orally once a day in tablet, chewable, or liquid syrup form",
+        "dosage": "For adults and children 6 years and older, the standard over-the-counter dose is usually 5 mg to 10 mg once daily, not exceeding 10 mg in 24 hours.",
+        "ingredients": "Active: Cetirizine hydrochloride. Inactive (common excipients vary by brand): Corn starch, lactose monohydrate, magnesium stearate, povidone, and titanium dioxide",
+        "side_effects": "Common side effects include drowsiness, fatigue, dry mouth, stomach pain, and dizziness."
+    },
+    "Loratadine": {
+        "name": "Loratadine",
+        "uses": "Used to relieve allergy symptoms such as sneezing, runny nose, itchy or watery eyes, and skin hives.",
+        "usage": "Typically taken orally once a day in regular tablet, chewable, orally disintegrating, or liquid syrup form",
+        "dosage": "For adults and children 6 years and older, the standard over-the-counter dose is usually 10 mg once daily, not exceeding 10 mg in a 24-hour period.",
+        "ingredients": "Active: Loratadine. Inactive (common excipients vary by brand): Corn starch, lactose monohydrate, magnesium stearate, and microcrystalline cellulose.",
+        "side_effects": "Common side effects are rare but may include headache, dry mouth, nosebleed, or fatigue"
+    },
+    "Amoxicillin": {
+        "name": "Amoxicillin",
+        "uses": "Used to treat a wide variety of bacterial infections, including pneumonia, bronchitis, and infections of the ear, nose, throat, urinary tract, and skin",
+        "usage": "Typically taken orally every 8 to 12 hours as a capsule, tablet, chewable tablet, or liquid suspension.",
+        "dosage": "For adults and older children, the standard prescription dose ranges from 250 mg to 500 mg every 8 hours, or 500 mg to 875 mg every 12 hours, depending on the infection's severity.",
+        "ingredients": "Active: Amoxicillin (as amoxicillin trihydrate). Inactive (common excipients vary by brand): Crospovidone, magnesium stearate, microcrystalline cellulose, titanium dioxide, and gelatin",
+        "side_effects": "Common side effects include nausea, vomiting, diarrhea, and mild skin rashes."
+    },
+    "Azithromycin": {
+        "name": "Azithromycin",
+        "uses": "Used to treat various bacterial infections, including respiratory infections, skin infections, ear infections, and sexually transmitted diseases.",
+        "usage": "Typically taken orally as a tablet, capsule, or liquid suspension.",
+        "dosage": "For adults, a common regimen is a 5-day course (often called a Z-Pak) consisting of 500 mg on the first day, followed by 250 mg once daily on days two through five.",
+        "ingredients": "Active: Azithromycin (as azithromycin dihydrate). Inactive (common excipients vary by brand): Croscarmellose sodium, calcium phosphate, magnesium stearate, hypromellose, and titanium dioxide.",
+        "side_effects": "Common side effects include nausea, vomiting, diarrhea, abdominal pain, and headache."
+    },
+    "Metformin": {
+        "name": "Metformin",
+        "uses": "Used to control high blood sugar levels in people with type 2 diabetes.",
+        "usage": "Typically taken orally as a regular or extended-release tablet, usually once to three times a day.",
+        "dosage": "For adults, starting doses are often 500 mg twice a day or 850 mg once daily, increasing gradually as directed by a doctor.",
+        "ingredients": "Active: Metformin hydrochloride. Inactive (common excipients vary by brand): Hypromellose, magnesium stearate, polyethylene glycol, and povidone.",
+        "side_effects": "Common side effects include nausea, vomiting, upset stomach, diarrhea, and a metallic taste in the mouth."
+    },
+    "Pantoprazole": {
+        "name": "Pantoprazole",
+        "uses": "Decreases the amount of acid produced in the stomach to treat gastroesophageal reflux disease and erosive esophagitis.",
+        "usage": "Typically taken orally as a delayed-release tablet or liquid suspension once daily.",
+        "dosage": "For adults, the standard prescription dose is usually 40 mg once daily for up to 8 weeks.",
+        "ingredients": "Active: Pantoprazole sodium. Inactive (common excipients vary by brand): Calcium stearate, crospovidone, hypromellose, mannitol, sodium carbonate, and titanium dioxide.",
+        "side_effects": "Common side effects include headache, diarrhea, nausea, stomach pain, gas, and dizziness."
+    },
+    "Omeprazole": {
+        "name": "Omeprazole",
+        "uses": "Used to treat gastroesophageal reflux disease, stomach ulcers, and other conditions caused by excess stomach acid.",
+        "usage": "Typically taken orally as a delayed-release capsule or tablet once a day.",
+        "dosage": "For adults, the standard dose for treating GERD or ulcers is usually 20 mg to 40 mg once daily for 4 to 8 weeks.",
+        "ingredients": "Active: Omeprazole. Inactive (common excipients vary by brand): Lactose, magnesium stearate, mannitol, methacrylic acid copolymer, and titanium dioxide.",
+        "side_effects": "Common side effects include headache, stomach pain, nausea, diarrhea, and gas."
+    },
+    "Domperidone": {
+        "name": "Domperidone",
+        "uses": "Used to relieve nausea, vomiting, and feelings of fullness or bloating by helping the stomach empty faster.",
+        "usage": "Typically taken orally as a tablet or liquid suspension. It is highly recommended to take it 15 to 30 minutes before meals.",
+        "dosage": "For adults and adolescents over 12 years of age, the standard dose is usually 10 mg up to three times a day, not exceeding a maximum daily dose of 30 mg.",
+        "ingredients": "Active: Domperidone. Inactive (common excipients vary by brand): Lactose monohydrate, maize starch, microcrystalline cellulose, povidone, and magnesium stearate.",
+        "side_effects": "Common side effects include dry mouth, headache, and mild stomach cramps. A rare but serious side effect involves changes in heart rhythm (arrhythmia), which carries a higher risk in older adults or at higher doses."
+    },
+    "Ondansetron": {
+        "name": "Ondansetron",
+        "uses": "Blocks the actions of chemicals in the body that trigger nausea and vomiting, particularly during cancer chemotherapy, radiation therapy, or after surgery.",
+        "usage": "Typically taken orally as a regular tablet which dissolves on the tongue without water, or a liquid solution, starting 30 to 60 minutes before a triggering event.",
+        "dosage": "For adults preventing nausea from chemotherapy, a common dose is 8 mg taken 30 minutes before treatment, repeated 8 hours later, and then twice a day for 1 to 2 days after.",
+        "ingredients": "The active ingredient is ondansetron mixed with common inactive excipients like lactose, microcrystalline cellulose, and pregelatinized starch.",
+        "side_effects": "Common side effects include headache, constipation, fatigue, and dizziness, with a rare but serious risk of irregular heart rhythms."
+    },
+    "Loperamide": {
+        "name": "Loperamide",
+        "uses": "Used to control and relieve symptoms of sudden, acute diarrhea, as well as chronic diarrhea associated with inflammatory bowel disease.",
+        "usage": "Typically taken orally as a tablet, capsule, or liquid, usually right after each loose stool.",
+        "dosage": "For adults with acute diarrhea, the standard starting dose is 4 mg, followed by 2 mg after each subsequent loose stool. The maximum daily over-the-counter limit is generally 8 mg.",
+        "ingredients": "Active: Loperamide hydrochloride. Inactive (common excipients vary by brand): Lactose, corn starch, magnesium stearate, microcrystalline cellulose, and gelatin.",
+        "side_effects": "Common side effects include constipation, dizziness, tiredness, stomach pain, and dry mouth. Taking higher than recommended doses can lead to severe, life-threatening heart rhythm problems."
+    },
+    "ORS (Oral Rehydration Salts)": {
+        "name": "ORS (Oral Rehydration Salts)",
+        "uses": "Used to treat and prevent dehydration, especially that caused by severe diarrhea and vomiting.",
+        "usage": "Typically available as a dry powder in sachets that must be completely dissolved in a specific amount of clean, safe drinking water before consumption.",
+        "dosage": "For adults and children, the recommended amount depends on the volume of fluid lost, often involving drinking an amount of ORS solution roughly equal to the volume of stool passed.",
+        "ingredients": "Active: Sodium chloride, potassium chloride, sodium citrate, and anhydrous glucose. Inactive (common excipients vary by brand): Often contains added flavorings like orange or lemon and anti-caking agents to keep the powder dry.",
+        "side_effects": "Generally very safe when mixed correctly, but mixing it with too little water can cause a dangerous buildup of sodium in the blood."
+    },
+    "Albendazole": {
+        "name": "Albendazole",
+        "uses": "Used to treat a variety of parasitic worm infections, including those caused by dog or pork tapeworms.",
+        "usage": "Typically taken orally as a tablet, and it is highly recommended to take it with food\u2014especially a high-fat meal\u2014to significantly increase the body's absorption of the drug",
+        "dosage": "For adults and children over 60 kg, a common dose is 400 mg taken twice a day, with treatment durations ranging from a single day to a 28-day cycle depending on the specific parasite.",
+        "ingredients": "The active ingredient is albendazole, combined with common inactive excipients like corn starch, croscarmellose sodium, magnesium stearate, microcrystalline cellulose, and povidone.",
+        "side_effects": "Common side effects include stomach pain, nausea, vomiting, headache, and temporary hair loss."
+    },
+    "Doxycycline": {
+        "name": "Doxycycline",
+        "uses": "Used to treat various bacterial infections, including respiratory infections, severe acne, tick-borne diseases like Lyme disease, and to prevent malaria.",
+        "usage": "Typically taken orally as a capsule or tablet with a full glass of water, and it is highly recommended to stay upright for at least 30 minutes after taking it to prevent throat irritation.",
+        "dosage": "For adults, a common starting dose is 100 mg every 12 hours on the first day, followed by a maintenance dose of 100 mg once daily or 50 mg twice daily depending on the infection.",
+        "ingredients": "The active ingredient is doxycycline combined with common inactive excipients like microcrystalline cellulose, magnesium stearate, and gelatin.",
+        "side_effects": "Common side effects include nausea, mild diarrhea, upset stomach, and a significantly increased sensitivity to sunlight that can cause severe sunburns."
+    },
+    "Ciprofloxacin": {
+        "name": "Ciprofloxacin",
+        "uses": "Used to treat a wide variety of severe bacterial infections, including urinary tract infections (UTIs), respiratory infections, and skin infections.",
+        "usage": "Typically taken orally as a tablet or liquid suspension, and while it can be taken with meals, it should not be taken alone with dairy products (like milk or yogurt) as calcium severely reduces its absorption.",
+        "dosage": "For adults, a standard oral dose ranges from 250 mg to 750 mg every 12 hours for 3 to 14 days, depending on the severity and type of the infection.",
+        "ingredients": "The active ingredient is ciprofloxacin combined with common inactive excipients like crospovidone, hypromellose, and magnesium stearate.",
+        "side_effects": "Common side effects include nausea, diarrhea, and dizziness, with rare but serious \"black box\" warnings for risks like tendon rupture and permanent nerve damage."
+    },
+    "Amlodipine": {
+        "name": "Amlodipine",
+        "uses": "Primarily used to lower high blood pressure and prevent certain types of chest pain.",
+        "usage": "Typically taken orally as a tablet once a day, and it can be taken with or without food, preferably at the same time each day.",
+        "dosage": "For adults, the standard starting dose is usually 5 mg once daily, which a doctor may gradually increase to a maximum of 10 mg daily depending on blood pressure goals.",
+        "ingredients": "The active ingredient is amlodipine, combined with common inactive excipients like microcrystalline cellulose, dibasic calcium phosphate, and magnesium stearate.",
+        "side_effects": "Common side effects include swelling of the hands, ankles, or feet (edema), dizziness, fatigue, and flushing."
+    },
+    "Losartan": {
+        "name": "Losartan",
+        "uses": "Primarily used to treat high blood pressure, reduce the risk of stroke, and protect the kidneys in patients with type 2 diabetes.",
+        "usage": "Typically taken orally as a tablet once a day and can be taken with or without food.",
+        "dosage": "For most adults, the starting dose is 50 mg once daily, which a doctor may adjust up to a maximum of 100 mg per day based on blood pressure response.",
+        "ingredients": "The active ingredient is losartan potassium, often combined with common inactive excipients like microcrystalline cellulose, lactose hydrous, and magnesium stearate.",
+        "side_effects": "Common side effects include dizziness, fatigue, stuffy nose, and back pain, with more serious risks involving dangerously high blood potassium levels and severely low blood pressure."
+    },
+    "Atorvastatin": {
+        "name": "Atorvastatin",
+        "uses": "Used to lower \"bad\" cholesterol and triglycerides while increasing \"good\" cholesterol, helping reduce the risk of heart disease and stroke.",
+        "usage": "Typically taken orally as a tablet once a day, and it can be taken at any time of day with or without food.",
+        "dosage": "For adults, the standard starting dose is 10 mg to 20 mg once daily, which a doctor may gradually increase up to a maximum of 80 mg daily.",
+        "ingredients": "The active ingredient is atorvastatin, combined with common inactive excipients like calcium carbonate, microcrystalline cellulose, and magnesium stearate.",
+        "side_effects": "Common side effects include joint pain, diarrhea, and cold-like symptoms, with rare but serious risks of severe muscle breakdown and liver problems."
+    },
+    "Salbutamol": {
+        "name": "Salbutamol",
+        "uses": "Used to relieve and prevent symptoms of asthma and chronic obstructive pulmonary disease",
+        "usage": "Commonly inhaled using a metered-dose inhaler or a nebulizer for quick relief of sudden breathing issues, though it is also available in oral tablet or syrup forms.",
+        "dosage": "For adults using a standard inhaler, the typical dose is 1 to 2 puffs (100 to 200 mcg) as needed to relieve symptoms, with a general recommendation not to exceed 8 puffs in a 24-hour period.",
+        "ingredients": "The active ingredient is salbutamol, while inhalers often contain a safe chemical propellant like hydrofluoroalkane (HFA) as an inactive excipient.",
+        "side_effects": "Common side effects include shaky hands (tremors), a noticeably faster heart rate, headache, and dry mouth."
+    },
+    "Montelukast": {
+        "name": "Montelukast",
+        "uses": "Used to prevent and manage chronic asthma, as well as to relieve symptoms of seasonal and year-round allergies.",
+        "usage": "Typically taken orally once a day in the evening as a regular tablet, chewable tablet, or oral granules.",
+        "dosage": "For adults and adolescents 15 years and older, the standard dose is a 10 mg tablet taken once daily. Pediatric dosages range from 4 mg to 5 mg depending on age and are strictly guided by a doctor.",
+        "ingredients": "The active ingredient is montelukast, combined with common inactive excipients like microcrystalline cellulose, lactose monohydrate, croscarmellose sodium, and magnesium stearate.",
+        "side_effects": "Common side effects include headache, stomach pain, and mild cold-like symptoms. It carries a strict \"black box\" warning for serious mental health side effects, including mood swings, depression, and suicidal thoughts."
+    },
+    "Hydrocortisone": {
+        "name": "Hydrocortisone",
+        "uses": "Used to reduce swelling, inflammation, and severe allergic reactions, treating a wide variety of conditions ranging from skin rashes and asthma to autoimmune disorders and adrenal insufficiency.",
+        "usage": "Available in multiple forms, including topical creams, oral tablets, and injections. Creams should be applied thinly to the affected area, while oral tablets should be taken with food or milk to prevent stomach upset.",
+        "dosage": "For adults, topical applications are usually 1% to 2.5% applied one to four times daily. Oral tablet dosages vary widely from 20 mg to 240 mg per day depending strictly on the disease and severity, as directed by a doctor.",
+        "ingredients": "The active ingredient is hydrocortisone. Inactive excipients vary heavily by form\u2014creams often use cetyl alcohol, white petrolatum, and propylene glycol, while tablets typically contain lactose, corn starch, and magnesium stearate.",
+        "side_effects": "Common side effects for topical use include mild stinging, burning, or dryness"
+    },
+    "Clotrimazole": {
+        "name": "Clotrimazole",
+        "uses": "Used to treat a variety of fungal skin and yeast infections, including athlete's foot, ringworm, jock itch, and oral or vaginal thrush.",
+        "usage": "Primarily available as a topical cream, lotion, or powder applied directly to the affected skin, or as a vaginal cream or suppository. The affected area should be washed and dried thoroughly before applying a thin layer of the medication",
+        "dosage": "For general skin infections, it is typically applied twice a day for 2 to 4 weeks. Vaginal treatments are usually applied once daily at bedtime for 3 to 7 consecutive days, depending on the specific product's strength.",
+        "ingredients": "The active ingredient is clotrimazole, combined with common inactive excipients in creams such as benzyl alcohol, cetostearyl alcohol, polysorbate 60, and purified water.",
+        "side_effects": "Common side effects are generally mild and include burning, stinging, redness, or irritation at the site of application."
+    },
+    "Fluconazole": {
+        "name": "Fluconazole",
+        "uses": "Used to treat and prevent a wide variety of fungal and yeast infections, including vaginal, oral, and systemic candidiasis.",
+        "usage": "Typically taken orally as a tablet, capsule, or liquid suspension, and can be taken at any time of day with or without food.",
+        "dosage": "For a standard vaginal yeast infection in adults, a single 150 mg oral dose is usually sufficient, while severe systemic infections may require daily doses ranging from 200 mg to 800 mg directed by a doctor for several weeks.",
+        "ingredients": "The active ingredient is fluconazole, combined with common inactive excipients in tablets like microcrystalline cellulose, dibasic calcium phosphate, croscarmellose sodium, and magnesium stearate.",
+        "side_effects": "Common side effects include headache, nausea, stomach pain, and dizziness."
+    },
+    "Ketoconazole": {
+        "name": "Ketoconazole",
+        "uses": "Used to treat serious fungal infections of the skin, hair, nails, and blood when other treatments have failed.",
+        "usage": "Commonly available as a topical cream or medicated shampoo for skin and scalp infections, applied directly to the affected areas.",
+        "dosage": "For adults using topical creams, it is typically applied once or twice daily for 2 to 6 weeks, while the medicated shampoo is used twice a week. If prescribed orally for severe systemic infections, the standard dose is usually 200 mg to 400 mg once daily under close medical supervision.",
+        "ingredients": "The active ingredient is ketoconazole. Inactive excipients in the topical cream often include propylene glycol, cetyl alcohol, and purified water, while oral tablets contain lactose, corn starch, and magnesium stearate.",
+        "side_effects": "Common side effects for topical use include mild skin irritation, stinging, or dryness"
+    },
+    "Diclofenac": {
+        "name": "Diclofenac",
+        "uses": "Used to treat mild to moderate pain, migraines, and the joint pain, stiffness, and swelling caused by osteoarthritis, rheumatoid arthritis, and ankylosing spondylitis.",
+        "usage": "Available in various forms, including oral tablets or capsules, topical gels, and patches. Oral diclofenac is usually taken with a full glass of water.",
+        "dosage": "For treating adult osteoarthritis, a standard prescription might be 50 mg taken two or three times a day, or 75 mg twice a day for delayed-release tablets. Because of the risk of side effects, doctors typically prescribe the lowest effective dose for the shortest possible duration.",
+        "ingredients": "The active ingredient is diclofenac, combined with common inactive excipients in tablets like lactose, magnesium stearate, microcrystalline cellulose, and povidone.",
+        "side_effects": "Common side effects include upset stomach, nausea, heartburn, and dizziness. It carries a strict \"black box\" warning for an increased risk of serious cardiovascular events, like heart attacks and strokes, as well as severe gastrointestinal bleeding."
+    },
+    "Naproxen": {
+        "name": "Naproxen",
+        "uses": "Used to relieve pain, swelling, and joint stiffness from conditions like osteoarthritis, rheumatoid arthritis, acute gout, and menstrual cramps.",
+        "usage": "Typically taken orally as a regular tablet, delayed-release tablet, or liquid suspension",
+        "dosage": "For adults, the standard prescription dose for arthritis is usually 250 mg to 500 mg taken twice a day, with an absolute maximum daily limit of 1500 mg.",
+        "ingredients": "The active ingredient is naproxen, combined with common inactive excipients like microcrystalline cellulose, magnesium stearate, croscarmellose sodium, and povidone.",
+        "side_effects": "Common side effects include heartburn, stomach pain, dizziness, and headache, with strict \"black box\" warnings for an increased risk of severe stomach bleeding, ulcers, and cardiovascular events like heart attacks or strokes."
+    },
+    "Tramadol": {
+        "name": "Tramadol",
+        "uses": "Used to treat moderate to moderately severe pain, often prescribed when over-the-counter pain relievers are ineffective. It works by changing how the brain and nervous system respond to pain.",
+        "usage": "Typically taken orally as an immediate-release or extended-release tablet or capsule, and it can be taken with or without food.",
+        "dosage": "For adults, a typical starting dose for immediate-release tablets is 50 mg to 100 mg every 4 to 6 hours as needed, with a strict maximum daily limit of 400 mg to reduce the risk of seizures.",
+        "ingredients": "The active ingredient is tramadol hydrochloride, combined with common inactive excipients like microcrystalline cellulose, magnesium stearate, hypromellose, and lactose.",
+        "side_effects": "Common side effects include nausea, dizziness, constipation, and sweating. It carries severe \"black box\" warnings for high risks of addiction, abuse, life-threatening breathing problems, and a dangerous condition called serotonin syndrome."
+    },
+    "Codeine": {
+        "name": "Codeine",
+        "uses": "Used to treat mild to moderately severe pain and to help suppress chronic or severe coughing.",
+        "usage": "Typically taken orally as a regular tablet, capsule, or liquid syrup, and it can be taken with or without food, usually every 4 to 6 hours as needed.",
+        "dosage": "For adults treating pain, the standard dose is usually 15 mg to 60 mg every 4 hours, with a strict maximum daily limit of 360 mg. When used for a cough, the dose is generally lower, around 10 mg to 20 mg every 4 to 6 hours.",
+        "ingredients": "The active ingredient is codeine, combined with common inactive excipients in tablets like microcrystalline cellulose, lactose, and magnesium stearate.",
+        "side_effects": "Common side effects include drowsiness, constipation, nausea, and dizziness. It carries severe \"black box\" warnings for high risks of addiction, abuse, life-threatening respiratory depression."
+    },
+    "Dextromethorphan": {
+        "name": "Dextromethorphan",
+        "uses": "Used to temporarily relieve a dry, hacking cough caused by the common cold, flu, or inhaled irritants.",
+        "usage": "Typically taken orally as a liquid syrup, gel capsule, or lozenge, and can be taken with or without food.",
+        "dosage": "For adults and children 12 years and older, the standard dose is usually 10 mg to 30 mg every 4 to 8 hours as needed, with a strict maximum limit of 120 mg in a 24-hour period.",
+        "ingredients": "The active ingredient is dextromethorphan hydrobromide, combined with common inactive excipients in syrups like citric acid, artificial flavors, sodium benzoate, and sweetening agents.",
+        "side_effects": "Common side effects at normal doses include mild dizziness, lightheadedness, and slight nausea. Taking extreme or abusive doses carries severe risks of dissociative hallucinations, rapid heartbeat, and a potentially fatal condition."
+    },
+    "Ambroxol": {
+        "name": "Ambroxol",
+        "uses": "Used to thin and break down thick mucus in the airways, making it much easier to cough up and clear the respiratory tract in conditions like acute and chronic bronchitis, asthma, or other respiratory tract infections.",
+        "usage": "Typically taken orally as a liquid syrup, regular tablet, or lozenge, and it is generally recommended to take it with or shortly after meals to minimize any potential stomach upset.",
+        "dosage": "For adults, the standard starting dose is usually 30 mg taken two to three times a day, which a doctor may reduce to twice daily after the first few days of acute treatment.",
+        "ingredients": "The active ingredient is ambroxol hydrochloride, combined with common inactive excipients in syrups like sorbitol, glycerol, citric acid, and various artificial flavorings.",
+        "side_effects": "Common side effects are usually mild and include nausea, indigestion, diarrhea, and slight changes in taste or numbness in the mouth."
+    },
+    "Guaifenesin": {
+        "name": "Guaifenesin",
+        "uses": "Used to help thin and loosen mucus in the chest and throat, making it easier to cough up and clear the airways during a cold, flu, or other respiratory infections.",
+        "usage": "Typically taken orally as a regular tablet, extended-release tablet, or liquid syrup, and it is highly recommended to drink plenty of extra water while taking it to help further loosen the congestion.",
+        "dosage": "For adults taking immediate-release formulas, the standard dose is usually 200 mg to 400 mg every 4 hours as needed, with a strict maximum limit of 2400 mg in a 24-hour period.",
+        "ingredients": "The active ingredient is guaifenesin, combined with common inactive excipients in syrups like citric acid, glycerin, propylene glycol, sodium benzoate, and artificial flavorings.",
+        "side_effects": "Common side effects are generally mild and include nausea, vomiting, dizziness, and headache."
+    },
+    "Levothyroxine": {
+        "name": "Levothyroxine",
+        "uses": "Used to treat an underactive thyroid (hypothyroidism), an enlarged thyroid gland (goiter), and certain types of thyroid cancer.",
+        "usage": "Typically taken orally as a tablet or capsule once a day on an empty stomach, and it is highly recommended to take it 30 to 60 minutes before breakfast with a full glass of water.",
+        "dosage": "For adults, a typical starting dose ranges from 12.5 mcg to 50 mcg once daily, which a doctor strictly adjusts over time based on regular blood tests monitoring your specific thyroid hormone levels.",
+        "ingredients": "The active ingredient is levothyroxine sodium, combined with common inactive excipients in tablets like microcrystalline cellulose, magnesium stearate, acacia, and lactose.",
+        "side_effects": "Common side effects usually stem from too high of a dose and include a rapid heartbeat, unexplained weight loss, heat intolerance, excessive sweating, and anxiety."
+    },
+    "Insulin": {
+        "name": "Insulin",
+        "uses": "Used to treat type 1 and type 2 diabetes by helping blood sugar (glucose) enter the body's cells so it can be used for energy.",
+        "usage": "Commonly injected subcutaneously (under the skin) using a syringe, insulin pen, or an insulin pump, and injection sites should be rotated regularly to prevent skin thickening or pitting.",
+        "dosage": "Dosages are highly individualized and measured in international units (IU), varying drastically based on the patient's specific blood sugar levels, diet, physical activity, and the type of insulin being used.",
+        "ingredients": "The active ingredient is human insulin or an insulin analog, combined with inactive excipients like sterile water, zinc, glycerin, and preservatives such as metacresol or phenol to maintain stability.",
+        "side_effects": "Common and immediately dangerous side effect is unexpectedly low blood sugar, which can cause shakiness, sweating, confusion, and in severe cases, seizures or loss of consciousness."
+    },
+    "Furosemide": {
+        "name": "Furosemide",
+        "uses": "Used to treat fluid retention caused by congestive heart failure, liver disease, or kidney disease, and to help manage high blood pressure.",
+        "usage": "Typically taken orally as a tablet or liquid solution once or twice a day, and it is highly recommended to take it earlier",
+        "dosage": "For adults treating edema, a standard starting dose is usually 20 mg to 80 mg taken as a single dose, while high blood pressure is often treated with 40 mg twice a day.",
+        "ingredients": "The active ingredient is furosemide, combined with common inactive excipients in tablets like lactose monohydrate, magnesium stearate, corn starch, and talc.",
+        "side_effects": "Common side effects include increased urination, excessive thirst, muscle cramps, and dizziness."
+    },
+    "Hydrochlorothiazide": {
+        "name": "Hydrochlorothiazide",
+        "uses": "Used to treat high blood pressure and to reduce fluid retention caused by conditions like heart failure, liver disease, or kidney disease.",
+        "usage": "Typically taken orally as a tablet or capsule once a day, and it is highly recommended to take it in the morning.",
+        "dosage": "For adults managing high blood pressure, the standard starting dose is usually 12.5 mg to 25 mg once daily, which a doctor may adjust up to a maximum of 50 mg per day.",
+        "ingredients": "The active ingredient is hydrochlorothiazide, combined with common inactive excipients in tablets like lactose monohydrate, magnesium stearate, corn starch, and microcrystalline cellulose.",
+        "side_effects": "Common side effects include frequent urination, dizziness, lightheadedness, and headache, with more serious risks involving severe dehydration and dangerous electrolyte imbalances like low blood potassium."
+    },
+    "Warfarin": {
+        "name": "Warfarin",
+        "uses": "Prescribed to treat and prevent harmful blood clots, significantly reducing the risk of strokes, deep vein thrombosis (DVT), and pulmonary embolisms.",
+        "usage": "Typically taken orally as a tablet once a day at the exact same time each day.",
+        "dosage": "For adults, dosages are strictly individualized and typically range from 2 mg to 10 mg daily, guided entirely by regular blood tests to ensure the blood is clotting at a safe speed.",
+        "ingredients": "The active ingredient is warfarin sodium, combined with common inactive excipients like lactose, magnesium stearate, corn starch, and specific synthetic dyes used to cleanly color-code the different dosage strengths.",
+        "side_effects": "The most common and dangerous risk is severe bleeding, carrying a strict \"black box\" warning for potentially fatal bleeding events."
+    },
+    "Clopidogrel": {
+        "name": "Clopidogrel",
+        "uses": "Used to prevent blood cells from clumping together and forming harmful clots, significantly reducing the risk of heart attacks and strokes.",
+        "usage": "Typically taken orally as a tablet once a day, and it can be taken at the same time each day with or without food.",
+        "dosage": "For adults, the standard maintenance dose is usually 75 mg once daily, though a doctor may prescribe a larger one-time loading dose of 300 mg or 600 mg for acute cardiovascular events.",
+        "ingredients": "The active ingredient is clopidogrel, combined with common inactive excipients in tablets like microcrystalline cellulose, mannitol, polyethylene glycol, and titanium dioxide.",
+        "side_effects": "Common side effects include easy bruising, minor bleeding such as nosebleeds, and itching."
+    },
+    "Nitroglycerin": {
+        "name": "Nitroglycerin",
+        "uses": "Used to prevent and treat angina (chest pain) associated with coronary artery disease.",
+        "usage": "Available in several forms, including sublingual tablets, sublingual sprays, transdermal patches, and topical ointments.",
+        "dosage": "For acute chest pain, adults typically take one sublingual tablet or one spray dose under the tongue. If the pain persists, this can be repeated every 5 minutes for a strict maximum of 3 doses within a 15-minute timeframe.",
+        "ingredients": "The active ingredient is nitroglycerin. Sublingual tablets commonly contain simple inactive excipients like lactose, starch, and calcium stearate, which are formulated specifically.",
+        "side_effects": "Most common side effect is a severe, pounding headache. Other risks include flushing, dizziness, and a dangerous, sudden drop in blood pressure"
+    },
+    "Sertraline": {
+        "name": "Sertraline",
+        "uses": "Used to treat major depressive disorder, obsessive-compulsive disorder (OCD), panic attacks, post-traumatic stress disorder (PTSD), and social anxiety disorder.",
+        "usage": "Typically taken orally as a tablet or liquid oral concentrate once a day, either in the morning or evening.",
+        "dosage": "For adults treating depression, the standard starting dose is usually 50 mg once daily, which a doctor may gradually increase over a period of weeks up to a strict maximum of 200 mg per day.",
+        "ingredients": "The active ingredient is sertraline hydrochloride, combined with common inactive excipients in tablets like microcrystalline cellulose, dibasic calcium phosphate dihydrate, magnesium stearate, and titanium dioxide.",
+        "side_effects": "Common side effects include nausea, diarrhea, dizziness, drowsiness, dry mouth, and insomnia."
+    },
+    "Diazepam": {
+        "name": "Diazepam",
+        "uses": "Used to treat anxiety disorders, alcohol withdrawal symptoms, muscle spasms, and certain types of seizures.",
+        "usage": "Available in multiple forms, including oral tablets, liquid solutions, injections, and rectal gels. When taken orally, it can be taken typically one to four times a day depending on the condition being treated.",
+        "dosage": "For adults treating anxiety or muscle spasms, the standard dose usually ranges from 2 mg to 10 mg taken two to four times daily.",
+        "ingredients": "The active ingredient is diazepam, combined with common inactive excipients in tablets like anhydrous lactose, corn starch, pregelatinized starch, and calcium stearate.",
+        "side_effects": "Common side effects include profound drowsiness, fatigue, muscle weakness, and a loss of coordination."
+    },
+    "Alprazolam": {
+        "name": "Alprazolam",
+        "uses": "Used to manage anxiety disorders, specifically panic disorder or generalized anxiety disorder (GAD).",
+        "usage": "Typically taken orally as an immediate-release tablet, an extended-release tablet, or an orally disintegrating tablet.",
+        "dosage": "For adults treating anxiety, a standard starting dose is usually 0.25 mg to 0.5 mg taken three times a day. Dosages are strictly individualized by a doctor, with a general maximum limit of 4 mg per day for anxiety.",
+        "ingredients": "The active ingredient is alprazolam, combined with common inactive excipients in tablets like microcrystalline cellulose, lactose, magnesium stearate, corn starch, and docusate sodium.",
+        "side_effects": "Common side effects include profound drowsiness, dizziness, increased saliva production, and a change in sex drive or ability."
+    },
+    "Melatonin": {
+        "name": "Melatonin",
+        "uses": "Used primarily as a dietary supplement to help regulate the body's sleep-wake cycle.",
+        "usage": "Typically taken orally about 30 to 60 minutes before your desired bedtime to help induce sleep.",
+        "dosage": "For adults, a typical starting dose generally ranges from 1 mg to 5 mg, though some people may use up to 10 mg.",
+        "ingredients": "The active ingredient is melatonin. Inactive excipients in standard tablets often include microcrystalline cellulose, magnesium stearate, silicon dioxide, and stearic acid, while gummy forms frequently contain corn syrup, sugar, and pectin or gelatin.",
+        "side_effects": "Common side effects are typically mild and include daytime sleepiness, headaches, dizziness, and slight nausea."
+    },
+    "Vitamin D3": {
+        "name": "Vitamin D3",
+        "uses": "Used to treat and prevent bone disorders, such as rickets and osteomalacia, as well as general vitamin D deficiency.",
+        "usage": "Typically taken orally, and it is highly recommended to take it with a meal or snack that contains fat to maximize absorption.",
+        "dosage": "A standard daily maintenance dose for adults is usually 400 to 1,000 International Units (IU), while a doctor may prescribe high-dose capsules of up to 50,000 IU taken once a week for severe deficiencies.",
+        "ingredients": "The active ingredient is cholecalciferol. Inactive excipients in softgel capsules often include soybean oil, gelatin, glycerin, and purified water.",
+        "side_effects": "Generally very safe at normal doses, but taking excessively high doses over a long period can cause dangerously high calcium levels in the blood (hypercalcemia)."
+    },
+    "Vitamin B12": {
+        "name": "Vitamin B12",
+        "uses": "Used to treat or prevent Vitamin B12 deficiency and a related condition called pernicious anemia, which can cause severe fatigue and nerve damage.",
+        "usage": "Available in several forms, including standard oral tablets, sublingual (under the tongue) lozenges, liquid drops, nasal sprays, and prescription intramuscular injections.",
+        "dosage": "For adults, a typical over-the-counter dietary supplement dose ranges from 500 mcg to 1,000 mcg daily. For severe, medically diagnosed deficiencies, a doctor will often administer a 1,000 mcg intramuscular injection daily or weekly to bypass the digestive system and quickly restore levels.",
+        "ingredients": "The active ingredient is usually cyanocobalamin or methylcobalamin. Common inactive excipients in sublingual tablets include mannitol, microcrystalline cellulose, magnesium stearate, and artificial cherry or berry flavorings.",
+        "side_effects": "Generally considered very safe and well-tolerated even at high doses because the body naturally excretes excess amounts in urine."
+    },
+    "Iron supplements": {
+        "name": "Iron supplements",
+        "uses": "Used to treat and prevent iron deficiency and iron deficiency anemia.",
+        "usage": "Typically taken orally as regular tablets, delayed-release capsules, or liquid drops.",
+        "dosage": "For adults treating iron deficiency anemia, a standard dose is often 325 mg of ferrous sulfate taken one to three times a day, strictly as directed by a doctor based on blood test results.",
+        "ingredients": "The active ingredient is typically an iron salt like ferrous sulfate. Common inactive excipients in tablets include microcrystalline cellulose, magnesium stearate,etc",
+        "side_effects": "Common side effects are overwhelmingly gastrointestinal and include constipation, nausea, stomach cramps, and harmless dark or black-colored stools."
+    },
+    "Calcium carbonate": {
+        "name": "Calcium carbonate",
+        "uses": "Used to prevent or treat low blood calcium levels in people who do not get enough calcium from their diets, supporting the building and maintenance of strong bones and teeth.",
+        "usage": "When taken as a daily dietary supplement, it is highly recommended to take it with food, as the stomach acid produced during a meal is necessary for proper absorption. When used as an antacid, it is taken as needed.",
+        "dosage": "For adults taking it as a supplement, standard doses usually range from 500 mg to 1,000 mg per day. When used as an antacid, 1 to 2 chewable tablets are typically taken as symptoms occur, with strict adherence to the maximum daily limit listed on the packaging.",
+        "ingredients": "The active ingredient is calcium carbonate. Common inactive excipients in chewable antacid tablets often include sucrose, dextrose, starch, magnesium stearate.",
+        "side_effects": "Common side effects are usually mild and include constipation, gas, and bloating. Taking excessively high amounts over a long period can lead to dangerously high calcium levels in the blood, severe nausea, vomiting, and kidney stones."
+    },
+    "Zinc sulfate": {
+        "name": "Zinc sulfate",
+        "uses": "Used to treat and prevent zinc deficiency.",
+        "usage": "Typically taken orally as a tablet, capsule, or liquid syrup. It is best absorbed when taken on an empty stomach.",
+        "dosage": "For adults treating a deficiency, a standard dose is often a 220 mg tablet of zinc sulfate taken once daily, strictly as directed by a healthcare provider.",
+        "ingredients": "The active ingredient is zinc sulfate. Common inactive excipients in tablets include microcrystalline cellulose, stearic acid, magnesium stearate, and croscarmellose sodium.",
+        "side_effects": "Common side effects are primarily gastrointestinal and include nausea, vomiting, stomach cramps, and a lingering metallic taste in the mouth."
+    },
+    "Folic acid": {
+        "name": "Folic acid",
+        "uses": "Used to treat or prevent folate deficiency and certain types of anemia.",
+        "usage": "Typically taken orally as a regular tablet, chewable gummy, or liquid solution once a day.",
+        "dosage": "For adults and pregnant women looking to prevent deficiency, a standard daily over-the-counter dose usually ranges from 400 mcg to 800 mcg. For treating diagnosed deficiencies or severe anemia, a doctor may prescribe a much higher therapeutic dose of 1 mg to 5 mg daily.",
+        "ingredients": "The active ingredient is folic acid. Common inactive excipients in regular tablets include microcrystalline cellulose, lactose monohydrate, magnesium stearate, and croscarmellose sodium.",
+        "side_effects": "Generally considered extremely safe and well-tolerated since it is water-soluble and excess amounts are naturally excreted in urine."
+    },
+    "Deplatt A": {
+        "name": "Deplatt A",
+        "uses": "Used to prevent blood cells from clumping together and forming dangerous clots in people with severe cardiovascular disease.",
+        "usage": "Typically taken orally as a tablet once a day. Because it contains aspirin, which can irritate the stomach lining over time, it is highly recommended to take it with food or a meal.",
+        "dosage": "For adults, a standard daily maintenance dose typically contains 75 mg of clopidogrel combined with either 75 mg or 150 mg of aspirin, prescribed strictly based on a doctor's ongoing cardiovascular risk assessment.",
+        "ingredients": "The active ingredients are clopidogrel (as clopidogrel bisulfate) and aspirin (acetylsalicylic acid).",
+        "side_effects": "Common and significant side effect is a heightened risk of bleeding, which frequently manifests as easy bruising, prolonged bleeding from minor cuts, and nosebleeds."
+    },
+    "Oxramet XR": {
+        "name": "Oxramet XR",
+        "uses": "Combination antidiabetic medication used to treat type 2 diabetes mellitus.",
+        "usage": "Typically taken orally once daily, and it is highly recommended to take it with a meal to reduce the risk of stomach upset.",
+        "dosage": "Common strengths include 10 mg/500 mg or 10 mg/1000 mg. The specific dose is strictly determined by a doctor based on your blood glucose levels and medical history.",
+        "ingredients": "The active ingredients are Dapagliflozin and Metformin Hydrochloride. Inactive excipients include microcrystalline cellulose, magnesium stearate, and various coating agents.",
+        "side_effects": "Common side effects include nausea, diarrhea, headache, and frequent urination."
+    },
+    "Repace": {
+        "name": "Repace",
+        "uses": "Primarily used to treat high blood pressure. It is also prescribed to reduce the risk of stroke in patients with high blood pressure and an enlarged heart and to protect the kidneys from damage in patients with type 2 diabetes.",
+        "usage": "Typically taken orally as a tablet once daily. It can be taken with or without food, but it is best to take it at the same time each day to maintain consistent blood pressure control.",
+        "dosage": "Standard dosages for adults usually start at 25 mg or 50 mg once daily. Depending on the patient's blood pressure response, a doctor may increase this to a maximum of 100 mg per day.",
+        "ingredients": "The active ingredient is Losartan Potassium. Inactive ingredients in the tablets typically include microcrystalline cellulose, lactose monohydrate, magnesium stearate, and various coating agents like hypromellose and titanium dioxide.",
+        "side_effects": "Common side effects include dizziness, fatigue, and nasal congestion."
+    },
+    "Tonact": {
+        "name": "Tonact",
+        "uses": "Primarily prescribed to reduce the risk of heart attack, stroke, and other heart complications in people with heart disease or diabetes.",
+        "usage": "Typically taken orally as a tablet once a day. It can be taken at any time of day, with or without food.",
+        "dosage": "For adults, the standard starting dose is usually 10 mg or 20 mg once daily. For those who require a large reduction in LDL cholesterol, a starting dose of 40 mg may be used.",
+        "ingredients": "The active ingredient is Atorvastatin Calcium. Common inactive excipients include calcium carbonate, microcrystalline cellulose, lactose monohydrate, croscarmellose sodium, and magnesium stearate.",
+        "side_effects": "Common side effects include joint pain, diarrhea, and cold-like symptoms (sore throat/runny nose)."
+    }
+}

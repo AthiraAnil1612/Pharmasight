@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaSight | AI Medicine Authentication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* Theme from uploaded file */
+            --primary: #0ea5e9;       /* Medical Blue */
+            --secondary: #0f172a;     /* Dark Slate - Main Theme Color */
+            --secondary-light: #1e293b;
+            --accent: #14b8a6;        /* Teal Success */
+            --danger: #ef4444;        /* Red Counterfeit */
+            --light: #f8fafc;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #334155;
+            --text-light: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--light);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* --- Animations (From PharmaSight) --- */
+        @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes scan { 0% { top: 0; opacity: 0.8; } 50% { top: 100%; opacity: 1; } 100% { top: 0; opacity: 0.8; } }
+        @keyframes ecgMove { 0% { background-position: 0 0; } 100% { background-position: 100% 0; } }
+        @keyframes pulse-soft { 0% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(20, 184, 166, 0); } 100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0); } }
+        
+        /* Scroll Reveal Class */
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+        /* --- Navbar (Glassy Style) --- */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.5rem 6%; 
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed; width: 100%; z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem; font-weight: 700; color: var(--secondary);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .logo i { color: var(--accent); }
+
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a { text-decoration: none; color: var(--secondary); font-weight: 500; transition: 0.3s; position: relative; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .btn-nav {
+            padding: 0.7rem 1.8rem;
+            background: var(--secondary);
+            color: white !important;
+            border-radius: 50px;
+            font-weight: 600; text-decoration: none; transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3);
+        }
+        .btn-nav:hover { transform: translateY(-2px); background: var(--primary); }
+
+        /* --- Hero Section (Dark Theme from Uploaded File) --- */
+        .hero {
+            min-height: 100vh;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 8rem 6% 4rem;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            position: relative; overflow: hidden;
+        }
+
+        /* Abstract Circle Background */
+        .hero::before {
+            content: ''; position: absolute; top: -10%; right: -5%;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+            z-index: 0; pointer-events: none;
+        }
+
+        .hero-content { flex: 1; max-width: 600px; z-index: 1; animation: slideUp 1s forwards; }
+
+        .badge {
+            display: inline-block; padding: 0.5rem 1rem;
+            background: rgba(20, 184, 166, 0.15); border: 1px solid rgba(20, 184, 166, 0.3);
+            color: var(--accent); border-radius: 30px; font-size: 0.9rem; font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.8rem; line-height: 1.1; margin-bottom: 1.5rem;
+        }
+        .hero h1 span { color: var(--primary); }
+
+        .hero p { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 2.5rem; max-width: 550px; }
+
+        .hero-btns { display: flex; gap: 1rem; }
+
+        .btn-primary {
+            padding: 1rem 2.2rem;
+            background: var(--accent); color: var(--secondary);
+            border-radius: 8px; text-decoration: none; font-weight: 700;
+            transition: 0.3s; display: flex; align-items: center; gap: 10px;
+            animation: pulse-soft 2s infinite;
+        }
+        .btn-primary:hover { transform: translateY(-3px); background: #0d9488; color: white; }
+
+        .btn-outline {
+            padding: 1rem 2.2rem;
+            background: transparent; border: 2px solid var(--accent); color: var(--accent);
+            border-radius: 8px; text-decoration: none; font-weight: 700;
+            transition: 0.3s; display: flex; align-items: center; gap: 10px;
+        }
+        .btn-outline:hover { background: rgba(20, 184, 166, 0.1); color: white; }
+
+        /* --- Hero Widget (Dark Glass Style + Heartbeat) --- */
+        .hero-visual { flex: 1; display: flex; justify-content: center; position: relative; z-index: 1; }
+        
+        .hero-card {
+            width: 420px;
+            background: rgba(255, 255, 255, 0.03); /* Dark glass */
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px; padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1.5s forwards 0.5s; opacity: 0;
+        }
+
+        .scan-animation {
+            height: 220px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+            border-radius: 16px; position: relative; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Heartbeat ECG Line */
+        .ecg-line {
+            position: absolute; top: 50%; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 150' preserveAspectRatio='none'%3E%3Cpath d='M0,75 L50,75 L60,40 L70,110 L80,75 L120,75 L130,20 L140,130 L150,75 L200,75' stroke='%2314b8a6' stroke-width='2' fill='none' vector-effect='non-scaling-stroke' opacity='0.8'/%3E%3C/svg%3E");
+            background-size: 50% 100%; background-repeat: repeat-x;
+            opacity: 0.7; animation: ecgMove 3s linear infinite; z-index: 1;
+        }
+
+        .scan-line {
+            position: absolute; width: 100%; height: 3px;
+            background: var(--accent); box-shadow: 0 0 15px var(--accent);
+            top: 0; animation: scan 2.5s ease-in-out infinite; z-index: 2;
+        }
+
+        .status-text { color: white; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; }
+        
+        .result-pill {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-top: 1rem; padding: 0.8rem;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px; color: #e2e8f0; font-size: 0.9rem;
+        }
+
+        /* --- Trust Indicators (Dark Theme) --- */
+        .trust-section {
+            display: flex; justify-content: center; gap: 4rem; padding: 3rem 6%;
+            background: var(--secondary); border-top: 1px solid rgba(255,255,255,0.05);
+            flex-wrap: wrap; color: white;
+        }
+        .trust-item { text-align: center; }
+        .trust-item h3 { font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; color: var(--accent); margin-bottom: 0.2rem; }
+        .trust-item p { color: #94a3b8; font-size: 0.95rem; font-weight: 500; }
+
+        /* --- Features Section --- */
+        .features { padding: 6rem 6%; background: white; text-align: center; }
+        
+        .section-title {
+            text-align: center; font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;
+        }
+        .section-title span { border-bottom: 4px solid var(--accent); }
+        .section-subtitle { color: var(--text-main); margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        
+        .feature-card {
+            background: white; padding: 2.5rem; border-radius: 16px;
+            text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s; border: 1px solid #f1f5f9; position: relative; overflow: hidden;
+        }
+        .feature-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--secondary); transition: 0.3s; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1); }
+        .feature-card:hover::before { background: var(--accent); }
+
+        .icon-box {
+            width: 65px; height: 65px; background: #f0f9ff; color: var(--primary);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            font-size: 1.6rem; margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 { font-family: 'Space Grotesk', sans-serif; color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem; }
+        .feature-card p { color: var(--text-main); line-height: 1.6; }
+
+        /* --- User Story (Dark Theme) --- */
+        .user-story {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1e293b 100%);
+            color: white; padding: 5rem 6%; text-align: center;
+            margin: 4rem 0; position: relative;
+        }
+        .story-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+        .story-content p { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 400; font-style: italic; margin-bottom: 2rem; line-height: 1.4; }
+        .story-author { font-weight: 700; color: var(--accent); font-size: 1.1rem; letter-spacing: 1px; }
+
+        /* --- How It Works --- */
+        .how-it-works { padding: 5rem 6%; background: var(--light); }
+        .step-container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; margin-top: 4rem; }
+        .step { text-align: center; flex: 1; min-width: 250px; position: relative; }
+        .step-number {
+            width: 50px; height: 50px; background: var(--secondary); color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 1.2rem; margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+        }
+        .step h3 { font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem; color: var(--secondary); }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--secondary); color: #94a3b8;
+            text-align: center; padding: 4rem 6%; border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 700; color: white; margin-bottom: 1rem; }
+        .tech-stack { display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; font-size: 1.5rem; }
+        .tech-stack i { transition: 0.3s; color: #64748b; }
+        .tech-stack i:hover { color: var(--accent); transform: scale(1.2); }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding-top: 120px; }
+            .hero-visual { margin-top: 3rem; width: 100%; }
+            .hero-card { width: 100%; }
+            .nav-links { display: none; }
+            .hero-btns { justify-content: center; }
+            .trust-section { flex-direction: column; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-eye"></i> PharmaSight
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how">How it Works</a>
+            {% if user.is_authenticated %}
+    <a href="{% url 'profile' %}">My Profile</a>
+    <a href="{% url 'logout' %}">Logout</a>
+{% else %}
+    <a href="{% url 'login' %}">Login</a>
+{% endif %}
+
+        </div>
+        {% if user.is_authenticated %}
+    <a href="{% url 'scan' %}" class="btn-primary">Get Started</a>
+{% else %}
+    <a href="{% url 'register' %}" class="btn-primary">Get Started</a>
+{% endif %}
+
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge"><i class="fa-solid fa-shield-halved"></i> Verify Before You Trust</div>
+            <h1>Authentication & Risk Analysis <br><span>For Safer Medicine</span></h1>
+            <p>
+                PharmaSight detects counterfeit drugs using Image Processing and analyzes your personal health risks (allergies & side effects) in real-time.
+            </p>
+            <div class="hero-btns">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'scan' %}" class="btn-primary">
+                        <i class="fa-solid fa-camera"></i> Scan Medicine
+                    </a>
+                    <a href="{% url 'scan' %}" class="btn-outline">
+                        <i class="fa-solid fa-upload"></i> Upload Image
+                    </a>
+                {% else %}
+                    <a href="{% url 'login' %}" class="btn-primary">
+                        <i class="fa-solid fa-camera"></i> Scan Medicine
+                    </a>
+                    <a href="{% url 'login' %}" class="btn-outline">
+                        <i class="fa-solid fa-upload"></i> Upload Image
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; color: #94a3b8; font-size: 0.85rem;">
+                    <span><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> System Active</span>
+                    
+                </div>
+                
+                <div class="scan-animation">
+                    <div class="ecg-line"></div>
+                    <i class="fa-solid fa-pills" style="font-size: 6rem; color: rgba(255,255,255,0.2); z-index: 0;"></i>
+                    <div class="scan-line"></div>
+                </div>
+
+                <h3 class="status-text">
+                    Analysis Complete 
+                    <span style="font-size:0.75rem; background:rgba(20, 184, 166, 0.2); color:var(--accent); padding:2px 8px; border-radius:4px;">98% Conf.</span>
+                </h3>
+                
+                <div class="result-pill">
+                    <span style="font-weight: 600; color: #e2e8f0;">Authenticity</span>
+                    <span style="color: var(--accent); font-weight: 700;">Genuine <i class="fa-solid fa-check"></i></span>
+                </div>
+                <div class="result-pill" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
+                    <span style="font-weight: 600; color: #e2e8f0;">Personal Risk</span>
+                    <span style="color: var(--danger); font-weight: 700;">High (Allergy) <i class="fa-solid fa-triangle-exclamation"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-section animate-on-scroll">
+        <div class="trust-item">
+            <h3>99.9%</h3>
+            <p>Detection Accuracy</p>
+        </div>
+        <div class="trust-item">
+            <h3><i class="fa-solid fa-database"></i></h3>
+            <p>Verified Database</p>
+        </div>
+        <div class="trust-item">
+            <h3>0s</h3>
+            <p>Latency (Real-time)</p>
+        </div>
+        <div class="trust-item">
+            <h3>24/7</h3>
+            <p>Health Monitoring</p>
+        </div>
+    </div>
+
+    <section class="features" id="features">
+        <h2 class="section-title animate-on-scroll"><span>Comprehensive Protection</span></h2>
+        <p class="section-subtitle animate-on-scroll">Combining deep learning authentication with personalized health profiling for complete peace of mind.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card animate-on-scroll">
+                <div class="icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h3>Counterfeit Detection</h3>
+                <p>Advanced OpenCV & Machine Learning algorithms analyze packaging texture, fonts, and QR codes to identify fake medicines instantly.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Personalized Risk Analysis</h3>
+                <p>The system cross-references medicine ingredients with your health profile to detect allergies and potential side effects.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                <h3>Verified Drug Info</h3>
+                <p>Retrieve accurate details about medicine uses, manufacturers, and dosage directly from our secure database.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll">
+                <div class="icon-box"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Web-Based Access</h3>
+                <p>No expensive hardware needed. Use any browser on your phone or laptop to scan or upload images for immediate results.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="user-story animate-on-scroll">
+        <div class="story-content">
+            <p>"PharmaSight alerted me that my medication had a high interaction risk with my allergies. It's not just about fake drugs; it's about safe usage."</p>
+            <div class="story-author">- Safe Medicine User</div>
+        </div>
+    </div>
+
+    <section class="how-it-works" id="how">
+        <h2 class="section-title animate-on-scroll"><span>How It Works</span></h2>
+        <div class="step-container">
+            <div class="step animate-on-scroll">
+                <div class="step-number">1</div>
+                <h3>Login & Profile</h3>
+                <p style="color: var(--text-main);">Securely log in and set up your health profile (allergies & conditions).</p>
+            </div>
+            <div class="step animate-on-scroll">
+                <div class="step-number">2</div>
+                <h3>Scan or Upload</h3>
+                <p style="color: var(--text-main);">Capture the medicine packaging or QR code using your camera.</p>
+            </div>
+            <div class="step animate-on-scroll">
+                <div class="step-number">3</div>
+                <h3>Get Analysis</h3>
+                <p style="color: var(--text-main);">Receive instant Genuine/Fake status and your Personal Risk Level (High/Low).</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <i class="fa-solid fa-eye" style="color: var(--accent);"></i> PharmaSight
+        </div>
+        <p>Counterfeit Medicine Authentication & Risk Analysis System.</p>
+        
+        <div class="tech-stack">
+            <i class="fa-brands fa-python" title="Python"></i>
+            <i class="fa-brands fa-js" title="JavaScript"></i>
+            <i class="fa-solid fa-brain" title="Machine Learning"></i>
+            <i class="fa-solid fa-database" title="Database"></i>
+        </div>
+
+        <p style="font-size: 0.9rem; margin-top: 1rem;">
+            &copy; 2026 PharmaSight Project. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>
