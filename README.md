@@ -93,3 +93,24 @@ Access detailed information for thousands of medicines, including:
 *PharmaSight is an AI-assisted tool meant for informational purposes. It is not a replacement for professional medical advice or official regulatory verification systems. Always consult with a licensed healthcare provider before starting new medications.*
 
 ---
+
+## 📸 Screenshots
+<img width="1919" height="1025" alt="Screenshot 2026-06-25 120423" src="https://github.com/user-attachments/assets/330a357a-9dbc-47d3-9a24-b50b6e8fc4ac" />
+<img width="1917" height="1032" alt="Screenshot 2026-06-25 120442" src="https://github.com/user-attachments/assets/d5ad9a85-e90e-4227-a6a6-a0f42bee484a" />
+<img width="1906" height="1027" alt="Screenshot 2026-06-25 120656" src="https://github.com/user-attachments/assets/e35539e2-04d4-4ddc-98b0-e01fcb340dfe" />
+<img width="1919" height="1029" alt="Screenshot 2026-06-25 120734" src="https://github.com/user-attachments/assets/e257e747-9ce2-4b2d-8809-34ce2f0117e5" />
+<img width="1919" height="1029" alt="Screenshot 2026-06-25 120803" src="https://github.com/user-attachments/assets/5cec2825-a9b6-440c-bb9e-370e22f12525" />
+<img width="1919" height="1029" alt="Screenshot 2026-06-25 121043" src="https://github.com/user-attachments/assets/016128ce-4ac5-4ee5-9009-d08da211943c" />
+<img width="1919" height="1031" alt="Screenshot 2026-06-25 120838" src="https://github.com/user-attachments/assets/32786f34-97f7-446d-9a0b-48293354d331" />
+<img width="1919" height="1029" alt="Screenshot 2026-06-25 120858" src="https://github.com/user-attachments/assets/efb881ec-5eb8-48d0-9d5e-aa06c9bfc245" />
+<img width="1919" height="1032" alt="Screenshot 2026-06-25 120910" src="https://github.com/user-attachments/assets/99547dbf-b230-4049-816b-b6758f9172c5" />
+
+
+
+
+
+
+
+
+
+
